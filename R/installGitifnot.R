@@ -8,7 +8,7 @@
 #' @param portproxy proxy port
 #' @param force.install TRUE to force installation
 #' @export installGitifnot
-#' @import devtools
+#' @import devtools httr
 #' @author Miriam Mota \email{miriam.mota@@vhir.org}
 #' @examples 
 #' ## installGitifnot("miriammota","mmotaF",force.install = TRUE)

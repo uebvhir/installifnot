@@ -1,4 +1,3 @@
-
 #' A installifnot Function
 #'
 #' Download, install and load packages from CRAN-like repositories.

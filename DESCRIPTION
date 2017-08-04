@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("Mota", "Miriam", email = "miriam.mota@vhir.org", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: 
-   R (>= 3.4.1), devtools
+   R (>= 3.4.1), devtools, httr
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
