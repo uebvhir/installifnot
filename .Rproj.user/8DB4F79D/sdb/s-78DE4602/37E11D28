@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\n#' A installifnot Function\n#'\n#' Download, install and load packages from CRAN-like repositories.\n#' @param pckgName names of package \n#' @export installifnot\n#' @author Miriam Mota \\email{miriam.mota@@vhir.org}\n#' @examples \n#' ## installifnot(\"rpart\")\n#' @keywords install require library \n\n\ninstallifnot <- function(pckgName){\n  if (!(require(pckgName, character.only = TRUE))) {\n    install.packages(pckgName, dep = TRUE)\n    require(pckgName, character.only = TRUE)\n  }\n}\n",
+    "created" : 1501846934021.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2670744159",
+    "id" : "37E11D28",
+    "lastKnownWriteTime" : 1501848354,
+    "last_content_update" : 1501848354724,
+    "path" : "~/Documents/installifnot/R/installifnot.R",
+    "project_path" : "R/installifnot.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

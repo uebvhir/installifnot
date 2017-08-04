@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' A installGitifnot Function\n#'\n#' Download, install and load packages from Github repositories.\n#' @param pckgName names of package\n#' @param pathGit Repository address in the format username/repo[/subdir].\n#' @param proxy TRUE or FALSE. Default value is FALSE. \n#' @param urlproxy proxy domain\n#' @param portproxy proxy port\n#' @param force.install TRUE to force installation\n#' @export installGitifnot\n#' @import devtools\n#' @author Miriam Mota \\email{miriam.mota@@vhir.org}\n#' @examples \n#' ## installGitifnot(\"miriammota\",\"mmotaF\",force.install = TRUE)\n#' @keywords install require library github\n\n\ninstallGitifnot <- function(pathGit, \n                            pckgName, \n                            proxy = FALSE, \n                            urlproxy = \"conf_www.ir.vhebron.net\", \n                            portproxy = 8081, \n                            force.install = FALSE){\n  if (!(require(pckgName, character.only = TRUE)) | force.install) {\n    if (proxy) set_config(use_proxy(url = urlproxy, port = portproxy)) \n    install_github(file.path(pathGit,pckgName), force = force.install)\n    require(pckgName, character.only = TRUE)\n  }\n}\n",
+    "created" : 1501846935203.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "319077545",
+    "id" : "6833C234",
+    "lastKnownWriteTime" : 1501848356,
+    "last_content_update" : 1501848356371,
+    "path" : "~/Documents/installifnot/R/installGitifnot.R",
+    "project_path" : "R/installGitifnot.R",
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
