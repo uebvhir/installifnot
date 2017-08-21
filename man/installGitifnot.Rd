@@ -25,7 +25,7 @@ installGitifnot(pathGit, pckgName, proxy = FALSE,
 Download, install and load packages from Github repositories.
 }
 \examples{
-## installGitifnot("miriammota","mmotaF",force.install = TRUE)
+## installGitifnot(pathGit = "miriammota",pckgName ="mmotaF",force.install = TRUE)
 }
 \author{
 Miriam Mota \email{miriam.mota@vhir.org}

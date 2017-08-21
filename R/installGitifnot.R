@@ -11,7 +11,7 @@
 #' @import devtools httr
 #' @author Miriam Mota \email{miriam.mota@@vhir.org}
 #' @examples 
-#' ## installGitifnot("miriammota","mmotaF",force.install = TRUE)
+#' ## installGitifnot(pathGit = "miriammota",pckgName ="mmotaF",force.install = TRUE)
 #' @keywords install require library github
 
 
