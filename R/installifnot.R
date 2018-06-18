@@ -10,8 +10,9 @@
 
 
 installifnot <- function(pckgName){
-  if (!(require(pckgName, character.only = TRUE))) {
+  if (!is.element(pckgName, installed.packages()[,1]) )
     install.packages(pckgName, dep = TRUE)
-    require(pckgName, character.only = TRUE)
-  }
+  require(pckgName, character.only = TRUE)
 }
+
+

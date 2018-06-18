@@ -9,7 +9,7 @@
 #' @keywords install require library bioconductor 
 
 installBiocifnot <- function(pckgName){
-  if (!(require(pckgName, character.only = TRUE))) {
+  if (!is.element(pckgName, installed.packages()[,1])) {
     source("http://Bioconductor.org/biocLite.R")
     biocLite(pckgName)
     require(pckgName, character.only = TRUE)
