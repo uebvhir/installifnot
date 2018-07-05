@@ -4,10 +4,12 @@
 \alias{installBiocifnot}
 \title{A installBiocifnot Function}
 \usage{
-installBiocifnot(pckgName)
+installBiocifnot(pckgName, force.install = FALSE)
 }
 \arguments{
 \item{pckgName}{name of package}
+
+\item{force.install}{TRUE to force installation}
 }
 \description{
 Download, install and load packages from Bioconductor repositories.

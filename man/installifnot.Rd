@@ -4,10 +4,12 @@
 \alias{installifnot}
 \title{A installifnot Function}
 \usage{
-installifnot(pckgName)
+installifnot(pckgName, force.install = FALSE)
 }
 \arguments{
 \item{pckgName}{names of package}
+
+\item{force.install}{TRUE to force installation}
 }
 \description{
 Download, install and load packages from CRAN-like repositories.
