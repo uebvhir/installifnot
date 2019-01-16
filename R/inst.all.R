@@ -35,6 +35,8 @@ inst.all <- function(pckgName,
                      urlproxy = "conf_www.ir.vhebron.net", 
                      portproxy = 8081, 
                      force.install = FALSE){
+  
+  pckgName <- deparse(substitute(pckgName))
   if (!is.element(pckgName, installed.packages()[,1]) | force.install) {
     if (!is.null(pathGit)) {
       if (proxy) set_config(use_proxy(url = urlproxy, port = portproxy)) 
