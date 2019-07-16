@@ -34,16 +34,14 @@ inst.all <- function(pckgName,
                      proxy = FALSE, 
                      urlproxy = "conf_www.ir.vhebron.net", 
                      portproxy = 8081, 
-                     force.install = FALSE){
-  
+                     force.install = FALSE, ...){
   # pckgName <- deparse(substitute(pckgName))
   if (!is.element(pckgName, installed.packages()[,1]) | force.install) {
     if (!is.null(pathGit)) {
       if (proxy) set_config(use_proxy(url = urlproxy, port = portproxy)) 
-      install_github(file.path(pathGit,pckgName), force = force.install)
+      install_github(file.path(pathGit,pckgName),...)
     } else if (bioc) {
-      source("http://Bioconductor.org/biocLite.R")
-      biocLite(pckgName)
+      installBiocifnot(pckgName,...)
     } else {
       install.packages(pckgName, dep = TRUE)
     }

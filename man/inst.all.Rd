@@ -6,7 +6,7 @@
 \usage{
 inst.all(pckgName, pathGit = NULL, bioc = FALSE, proxy = FALSE,
   urlproxy = "conf_www.ir.vhebron.net", portproxy = 8081,
-  force.install = FALSE)
+  force.install = FALSE, ...)
 }
 \arguments{
 \item{pckgName}{names of package}
